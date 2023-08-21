@@ -9,13 +9,13 @@ const MatInput = TextField;
 export const FormContainer = styled.form`
   display: flex;
   flex-direction: column;
-`
+`;
 
 export const NameFormLabel = styled.label`
   margin-bottom: 15px;
   font-size: 24px;
   font-weight: 700;
-`
+`;
 
 export const FormNameInput = styled(MatInput)`
   display: block;
@@ -26,11 +26,11 @@ export const FormNameInput = styled(MatInput)`
   border-color: blue;
 `;
 
-export const NumberFormLabel =  styled.label`
+export const NumberFormLabel = styled.label`
   margin-bottom: 15px;
   font-size: 24px;
   font-weight: 700;
-`
+`;
 export const FormNumberInput = styled(MatInput)`
   display: block;
   max-width: 300px;
@@ -46,7 +46,7 @@ export const FormSubmitBtn = styled(MatButton)`
   border-radius: 10px;
 
   &:hover {
-    background-color: orange;
+    background-color: #add8e6;
     color: black;
   }
 `;

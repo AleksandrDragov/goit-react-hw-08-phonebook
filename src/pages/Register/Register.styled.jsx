@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
@@ -6,26 +6,23 @@ import Button from '@mui/material/Button';
 const InputField = TextField;
 const LogInBtn = Button;
 
-
-export const RegForm = styled.form `
+export const RegForm = styled.form`
   display: flex;
   flex-direction: column;
   padding-top: 30px;
-  
-`
+`;
 
-export const FormLabel = styled.label `
+export const FormLabel = styled.label`
   color: black;
   font-size: 18px;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
-`
+`;
 
 export const RegisterInput = styled(InputField)`
   max-width: 400px;
   margin: 0 auto;
-  
 `;
 
 export const RegisterButton = styled(LogInBtn)`
@@ -34,7 +31,7 @@ export const RegisterButton = styled(LogInBtn)`
   margin-top: 20px;
   border-radius: 10px;
   &:hover {
-    background-color: orange;
+    background-color: #add8e6;
     color: black;
   }
 `;

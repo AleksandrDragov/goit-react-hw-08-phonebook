@@ -23,7 +23,7 @@ export const FormLabel = styled.label`
 export const LoginInput = styled(InputField)`
   max-width: 400px;
   margin: 0 auto;
-`
+`;
 
 export const LoginButton = styled(LogInBtn)`
   max-width: fit-content;
@@ -31,9 +31,7 @@ export const LoginButton = styled(LogInBtn)`
   margin-top: 20px;
   border-radius: 10px;
   &:hover {
-    background-color: orange;
+    background-color: #add8e6;
     color: black;
   }
 `;
-
-

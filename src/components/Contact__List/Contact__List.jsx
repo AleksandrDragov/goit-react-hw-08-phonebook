@@ -1,42 +1,35 @@
-import { ContactItem, ContsctList, DeleteBtn } from './Contact__List.styled';
-import { BsFillBookmarkCheckFill } from 'react-icons/bs';
+import { ContactItem, ContactList, DeleteBtn } from './Contact__List.styled';
+import { BiBook } from 'react-icons/bi';
 import { useDispatch, useSelector } from 'react-redux';
 import { deleteContact } from 'redux/contacts/operations';
 import { selectError, selectVisibleContacts } from 'redux/contacts/selectors';
-import { BsFillTrash3Fill } from 'react-icons/bs';
-
-
 
 const ContactsList = () => {
-  const dispatch = useDispatch(); 
+  const dispatch = useDispatch();
   const error = useSelector(selectError);
   const userFilteredContacts = useSelector(selectVisibleContacts);
-  
+
   return (
-    <ContsctList>
-      {userFilteredContacts && !error &&
+    <ContactList>
+      {userFilteredContacts &&
+        !error &&
         userFilteredContacts.map(({ id, name, number }) => {
           return (
             <ContactItem key={id}>
-              <BsFillBookmarkCheckFill
-                style={{ color: 'blue', marginRight: '15px' }}
-              />
+              <BiBook style={{ color: 'blue', marginRight: '0' }} />
               {name}: {number}
               <DeleteBtn
                 variant="contained"
-                size='small'
+                size="small"
                 type="button"
                 onClick={() => dispatch(deleteContact(id))}
               >
                 Delete
-                <BsFillTrash3Fill
-                  style={{ marginLeft: '5px', paddingBottom: '5px' }}
-                />
               </DeleteBtn>
             </ContactItem>
           );
         })}
-    </ContsctList>
+    </ContactList>
   );
 };
 

@@ -1,6 +1,5 @@
 import styled from '@emotion/styled';
 
-
 export const Container = styled.div`
   max-width: 600px;
   min-height: 400px;
@@ -8,18 +7,15 @@ export const Container = styled.div`
   margin-left: auto;
   margin-top: 20px;
   padding: 10px;
-  background-color: white;
+  background-color: #fffff0;
   border-radius: 10px;
-  border: 1px solid black;
 `;
 
 export const Title = styled.h1`
-  text-align: center;  
+  text-align: center;
 `;
 
 export const ContactListTitle = styled.h2`
   text-align: center;
   font-size: 28px;
-
-
-`
+`;

@@ -3,15 +3,15 @@ import Button from '@mui/material/Button';
 
 const MatButton = Button;
 
-export const ContsctList = styled.ul`
+export const ContactList = styled.ul`
   padding-left: 0;
 `;
 
 export const ContactItem = styled.li`
   display: flex;
   align-items: center;
-  justify-content: space-between;
-
+  justify-content: space-betwen;
+  gap: 15px;
   font-size: 20px;
   &:not(:last-child) {
     margin-bottom: 15px;
@@ -21,10 +21,11 @@ export const ContactItem = styled.li`
 export const DeleteBtn = styled(MatButton)`
   padding-top: 7px;
   margin-top: auto;
+  margin-left: auto;
   border-radius: 10px;
-
+  padding-right: 0 auto;
   &:hover {
-    background-color: orange;
+    background-color: #add8e6;
     color: black;
   }
 `;
